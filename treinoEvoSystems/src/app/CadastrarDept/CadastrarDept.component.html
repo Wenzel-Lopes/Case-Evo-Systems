@@ -1,0 +1,12 @@
+<h2 align="center">Cadastro de departamentos</h2>
+
+<form align="center">
+  <input type="hidden" name="id" value="0">
+  <p>Nome do departamento: <input type="text" name="nome" [(ngModel)]="departamento.nome"></p>
+  <p>Sigla do departamento: <input type="text" name="sigla" [(ngModel)]="departamento.sigla"></p>
+  <button type="button" (click)="cadastrarDepartamentos()">Cadastrar</button>
+<br>
+<br>
+<br>
+<button type="button" (click)="redirectPgDept()">Voltar</button>
+</form>

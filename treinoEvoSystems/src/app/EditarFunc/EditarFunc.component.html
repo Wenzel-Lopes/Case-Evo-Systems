@@ -1,0 +1,11 @@
+<h2 align="center">Atualizar funcionários</h2>
+
+<form align="center">
+  <p>Id do funcionário: <input type="number" name="id" [(ngModel)]="funcionario.id"></p>
+  <p>Nome do funcionário: <input type="text" name="nome" [(ngModel)]="funcionario.Nome"></p>
+  <p>Foto do funcionário: <input type="text" name="foto" [(ngModel)]="funcionario.Foto"></p>
+  <p>RG do funcionário: <input type="number" name="Rg" [(ngModel)]="funcionario.Rg"></p>
+  <p>Departamento do funcionário: <input type="text" name="sigla" [(ngModel)]="funcionario.IdDepartamento"></p>
+  <button type="button" (click)="atualizarFuncionario()">Atualizar</button>
+  <button type="button" (click)="redirectFuncionarios()">Voltar</button>
+</form>

@@ -1,0 +1,27 @@
+<div align="center">
+  <h1 align="center">Lista de departamentos</h1>
+
+  <table>
+  <tr align="center">
+    <th>Id</th>
+    <th>Nome</th>
+    <th>Sigla</th>
+  </tr>
+
+  <div *ngFor="let departamento of departamentos">
+    <tr align="center">
+      <td>{{departamento.id}}</td>
+      <td>{{departamento.nome}}</td>
+      <td>{{departamento.sigla}}</td>
+      <button type="button" (click)="deletarDepartamento(departamento.id)">Excluir</button>
+      <button type="button" (click)="redirect(departamento.id)">Funcionarios</button>
+    </tr>
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <button type="button" (click)="redirectCadastro()">Cadastrar Departamento</button>
+  <button type="button" (click)="redirectEditar()">Editar Departamento</button>
+  </table>
+</div>

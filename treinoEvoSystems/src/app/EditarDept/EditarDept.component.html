@@ -1,0 +1,13 @@
+<h2 align="center">Atualizar departamentos</h2>
+
+<form>
+  <input type="hidden" name="id" value="0">
+  <p>Id do departamento: <input type="number" name="id" [(ngModel)]="departamento.id"></p>
+  <p>Nome do departamento: <input type="text" name="nome" [(ngModel)]="departamento.nome"></p>
+  <p>Sigla do departamento: <input type="text" name="sigla" [(ngModel)]="departamento.sigla"></p>
+  <button type="button" (click)="editarDepartamentos()">Editar</button>
+<br>
+<br>
+<br>
+<button type="button" (click)="redirectPgDept()">Voltar</button>
+</form>

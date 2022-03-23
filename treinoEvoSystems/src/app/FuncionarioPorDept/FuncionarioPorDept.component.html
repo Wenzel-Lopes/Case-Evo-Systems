@@ -1,0 +1,31 @@
+<h1 align="center">Lista de funcionários</h1>
+
+<table align="center">
+  <div width="200">
+    <tr>
+      <th width="20px">Foto</th>
+      <th>Id</th>
+      <th>Nome</th>
+      <th>Rg</th>
+      <th>Excluir</th>
+    </tr>
+  </div>
+
+  <div *ngFor="let funcionario of funcionarios">
+    <tr>
+      <img src={{funcionario.foto}} width="73px">
+      <td>{{funcionario.id}}</td>
+      <td>{{funcionario.nome}}</td>
+      <td>{{funcionario.rg}}</td>
+      <button type="button" (click)="deletarFuncionarios(funcionario.id)">Excluir</button>
+    </tr>
+  </div>
+  <br>
+  <br>
+  <br>
+  <button type="button" (click)="redirectPgDept()">Voltar</button>
+  <button type="button" (click)="redirectCadastroF()">Cadastrar Funcionarios</button>
+  <button type="button" (click)="redirectEditarF()">Editar Funcionarios</button>
+</table>
+
+

@@ -1,0 +1,13 @@
+<h2 align="center">Cadastro de funcionários</h2>
+
+<form align="center">
+  <input type="hidden" name="id" value="0">
+  <p>Nome do funcionario: <input type="text" name="nome" [(ngModel)]="funcionario.Nome"></p>
+  <p>Foto do funcionario: <input type="text" name="sigla" [(ngModel)]="funcionario.Foto"></p>
+  <p>RG do funcionario: <input type="text" name="sigla" [(ngModel)]="funcionario.Rg"></p>
+  <p>Departamento do funcionario: <input type="text" name="sigla" [(ngModel)]="funcionario.IdDepartamento"></p>
+  <button type="button" (click)="cadastrarFuncionario()">Cadastrar</button>
+<br>
+<br>
+<button type="button" (click)="redirectFuncionarios()">Voltar</button>
+</form>
